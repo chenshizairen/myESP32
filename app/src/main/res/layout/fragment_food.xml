@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_foodxs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="100dp"
+            android:text="剩下粮食量:"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tv_food"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/tv_foodxs"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="25dp"
+            android:background="@drawable/biankuang"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/tv_setxs"
+            android:layout_below="@id/tv_foodxs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="40dp"
+            android:text="请设置\n投食量:"
+            android:textSize="25dp" />
+
+        <Spinner
+            android:id="@+id/sp_set"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_alignRight="@id/tv_food"
+            android:layout_marginTop="220dp"
+            android:background="@drawable/biankuang"
+            android:gravity="center"
+            android:spinnerMode="dropdown"
+            android:dropDownVerticalOffset="40dp"
+            />
+
+        <Button
+            android:id="@+id/bt_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sp_set"
+            android:layout_alignRight="@id/sp_set"
+            android:text="确定"
+            android:layout_marginTop="20dp"
+            />
+        <Button
+            android:id="@+id/bt_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_setxs"
+            android:layout_alignRight="@id/tv_setxs"
+            android:layout_marginTop="60dp"
+            android:text="一键清仓"
+
+            />
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bt_sure"
+            android:layout_alignRight="@id/bt_sure"
+            android:layout_marginTop="32dp"
+            android:text="取消一键清仓"
+
+            />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

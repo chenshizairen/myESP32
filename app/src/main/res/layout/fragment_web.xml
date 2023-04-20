@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp">
+            <WebView
+
+                android:id="@+id/web"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2023-03-01 20:31"
+                android:textSize="20dp"
+                android:textColor="#0000FF"
+                android:layout_alignParentBottom="true"
+                />
+            <TextView
+                android:id="@+id/tv_temp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0000FF"
+                android:text="当前温度:26℃  "
+                android:textSize="15dp"
+                />
+            <TextView
+                android:id="@+id/tv_humity"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/tv_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0000FF"
+                android:text="当前湿度:60%  "
+                android:textSize="15dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="请选择要播放的音频"
+                android:textSize="20dp"
+                android:textColor="#0000ff"
+                />
+
+            <Button
+                android:id="@+id/bt_select"
+                android:layout_below="@id/tv_select"
+                android:layout_toRightOf="@id/spinner_medie"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定"
+                android:layout_marginTop="10dp"
+                />
+            <Spinner
+                android:background="@drawable/biankuang2"
+                android:layout_below="@id/tv_select"
+                android:layout_marginTop="10dp"
+                android:id="@+id/spinner_medie"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

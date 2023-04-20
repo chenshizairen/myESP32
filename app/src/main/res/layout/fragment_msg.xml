@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_tem"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="当前温度: 23℃"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/tv_humi"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="当前湿度: 60%"
+            android:textSize="20dp"
+
+            />
+
+            <WebView
+                android:id="@+id/wb_weather"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+    </LinearLayout>
+
+</FrameLayout>

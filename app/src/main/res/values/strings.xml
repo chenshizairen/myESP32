@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">智能投食</string>
+    <string name="layloadmedia">{id: 123452452,params: { media32: %1$d},method:\"thing.event.property.post\"}</string>
+    <string name="layloadfood">{id: 123452452,params: { duoji: %1$d},method:\"thing.event.property.post\"}</string>
+</resources>
